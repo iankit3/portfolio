@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: master
+  repo: iankit3/coefficients
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "services"
+    label: "Services"
+    folder: "src/pages/services"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "team"
+    label: "Team"
+    folder: "src/pages/team"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Job Title", name: "jobtitle", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Linkedin Url", name: "linkedinurl", widget: "markdown" }
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/Blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
