@@ -29,10 +29,6 @@ const Home = (props) => {
           </p>
         </div>
       </div>
-
-      <div className="container pt-2">
-        <Call button />
-      </div>
     </Layout>
   );
 };
@@ -40,7 +36,7 @@ const Home = (props) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services/" } }
+      filter: { fileAbsolutePath: { regex: "/showcase/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

@@ -1,6 +1,7 @@
 const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
+  pathPrefix: '/aboutme',
   siteMetadata: {
     title: 'Portfolio Website',
     description: 'A Corporate Advisory Firm',

@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
   branch: master
-  repo: iankit3/coefficients
+  repo: iankit3/aboutme
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "services"
-    label: "Services"
-    folder: "src/pages/services"
+  - name: "showcase"
+    label: "showcase"
+    folder: "src/pages/showcase"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -19,22 +19,21 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "team"
-    label: "Team"
-    folder: "src/pages/team"
+  - name: "skill"
+    label: "Skill"
+    folder: "src/pages/skill"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Job Title", name: "jobtitle", widget: "string" }
+      - { label: "Rating", name: "rating", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Email", name: "email", widget: "string" }
-      - { label: "Linkedin Url", name: "linkedinurl", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "markdown" }
   - name: "blog"
     label: "Blog"
-    folder: "src/pages/Blog"
+    folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:

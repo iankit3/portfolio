@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
@@ -32,6 +33,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.2.0",
     "prettier-eslint": "^8.8.2"
   }
 }
