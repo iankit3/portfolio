@@ -1,24 +1,26 @@
-import React from 'react'
-import SEO from '../components/SEO'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import SubFooter from '../components/SubFooter'
-import '../scss/style.scss'
+import React from 'react';
+import styled from 'styled-components';
+import SEO from '../components/SEO';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../css/style.css';
 
-const Layout = props => {
-  return (
-    <React.Fragment>
-      <SEO />
-      <div className={`page${props.bodyClass ? ` ${props.bodyClass}` : ''}`}>
-        <div id="wrapper" className="wrapper">
-          <Header />
-          {props.children}
-        </div>
-        <Footer />
-        {/* <SubFooter /> */}
+const StyledLayout = styled.div`
+  margin: 0;
+  padding: 0;
+`;
+
+const Layout = props => (
+  <StyledLayout>
+    <SEO />
+    <div className={`page${props.bodyClass ? ` ${props.bodyClass}` : ''}`}>
+      <Header />
+      <div id="wrapper" className="wrapper">
+        {props.children}
       </div>
-    </React.Fragment>
-  )
-}
+      <Footer />
+    </div>
+  </StyledLayout>
+);
 
-export default Layout
+export default Layout;

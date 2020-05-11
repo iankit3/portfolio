@@ -1,35 +1,36 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import styled from 'styled-components';
+
+const StyledFooter = styled.div`
+  background: red;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+`;
 
 const Footer = props => (
-  <div className="footer-strip">
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <div className="footer">
-            <h3 className="footer-title">{props.data.site.siteMetadata.title}</h3>
-            <ul className="footer-menu">
-              <li>
-                {' '}
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                {' '}
-                <Link to="/contact">Contact</Link>
-              </li>
-              <li className="copyright">
-                ©
+  <StyledFooter>
+      <h3 className="footer-title">{props.data.site.siteMetadata.title}</h3>
+      <div className="footer-menu">
+        <div>
+          {' '}
+          <Link to="/">Home</Link>
+        </div>
+        <div>
+          {' '}
+          <Link to="/contact">Contact</Link>
+        </div>
+        <div className="copyright">
+          © 
 {' '}
-{new Date().getFullYear()}
+{new Date().getFullYear()} 
 {' '}
 {props.data.site.siteMetadata.title}
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </div>
-  </div>
+  </StyledFooter>
 );
 
 export default props => (

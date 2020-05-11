@@ -31,14 +31,14 @@ class Header extends React.Component {
               <img alt="Coefficient" src={logo} />
             </Link>
           </div>
-          <div className="logo-mobile">
+          {/* <div className="logo-mobile">
             <Link to="/">
               <img alt="Coefficient" src={logoMobile} />
             </Link>
-          </div>
-          <MenuMobile active={this.state.menuActive} />
+          </div> */}
+          {/* <MenuMobile active={this.state.menuActive} /> */}
           <Menu />
-          <Hamburger toggleMenu={this.toggleMenu} />
+          {/* <Hamburger toggleMenu={this.toggleMenu} /> */}
         </div>
       </div>
     );
