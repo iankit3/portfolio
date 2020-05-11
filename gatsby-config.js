@@ -3,8 +3,8 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 module.exports = {
   pathPrefix: '/aboutme',
   siteMetadata: {
-    title: 'Portfolio Website',
-    description: 'A Corporate Advisory Firm',
+    title: 'Portfolio Website WIP',
+    description: 'A portfolio website',
     contact: {
       phone: '+91 0000000000',
       email: 'a4ankit@outlook.com',
