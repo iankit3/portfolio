@@ -70,3 +70,9 @@ yarn-error.log
 
 # IDE
 .vscode/
+
+# Nextjs
+.next
+out
+dist
+build
