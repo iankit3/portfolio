@@ -1,4 +1,7 @@
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
 module.exports = {
   distDir: "build",
-  basePath: process.env.NODE_ENV == "production" ? '/portfolio': ""
+  basePath,
+  assetPrefix: `${basePath}/`
 };
