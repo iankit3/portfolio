@@ -16,7 +16,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "local_deploy": "cross-env NODE_ENV=dev next build && next export -o dist/",
+    "local_deploy": "cross-env NODE_ENV=development next build && next export -o dist/",
     "build_deploy": "NODE_ENV=production next build && next export -o dist/"
   },
   "author": "",
