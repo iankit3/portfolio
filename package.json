@@ -16,8 +16,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build_deploy": "next build && next export -o dist/"
+    "local_deploy": "cross-env NODE_ENV=dev next build && next export -o dist/",
+    "build_deploy": "NODE_ENV=production next build && next export -o dist/"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
