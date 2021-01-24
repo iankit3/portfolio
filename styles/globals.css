@@ -14,12 +14,17 @@
 --glow: #e7175f;
 --flow: #11c3e4;
 --slow: #1171ef;
+--white-pattern: url("https://image.freepik.com/free-photo/gray-white-pixelated_1160-924.jpg");
+--scene: url("https://image.freepik.com/free-photo/3d-mountain-landscape-with-moonlit-sky_1048-6805.jpg");
+--j: url("/1077.jpg");
+    font-size: 16px;
 }
 
 body{
     background-color: var(--main);
     color: #efefef;
     font-family: 'Bubblegum Sans', Courier, monospace;
+    margin: 0;
 }
 
 html, body, #__next, #wrapper{
@@ -33,9 +38,18 @@ html, body, #__next, #wrapper{
 
 main#main{
     padding: 10px 32px;
-    min-height: 300px;
+    min-height: 600px;
     flex: 1 0 auto;
+    /* background: var(--j) 0 / 100% no-repeat scroll border-box border-box #fff; */
 }
+main#main{
+    padding: 0 !important;
+}
+
+main#main > *{
+    padding: 1rem 1.5rem 4rem 1.5rem;
+}
+
 
 header{
     flex: 0 0 auto;
@@ -46,4 +60,31 @@ footer{
     background: rgba(59, 130, 246, 0.2);
     min-height: 100px;
     flex: 0 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.project-wrapper{
+    display: flex;
+    flex: 1 1 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 4px;
+    flex-direction: column;
+    margin: 10px 5px;
+    padding: 2px 5px;
+}
+
+.project-item-big{
+    width: 400px;
+    height: 200px;
 }

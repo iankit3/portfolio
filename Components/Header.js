@@ -20,7 +20,7 @@ const Header = () => {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="/home">
+                  <Link href="/">
                     <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
                       Home
                     </a>
@@ -32,19 +32,19 @@ const Header = () => {
                     </a>
                   </Link>
 
-                  <Link href="/">
+                  <Link href="/projects">
                     <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       Projects
                     </a>
                   </Link>
 
-                  <Link href="/">
+                  <Link href="/contact">
                     <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       Contact
                     </a>
                   </Link>
 
-                  <Link href="/">
+                  <Link href="/blog">
                     <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       Blog
                     </a>
@@ -115,19 +115,19 @@ const Header = () => {
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/projects">
               <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 Projects
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/contact">
               <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 Contact
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/blog">
               <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 Blog
               </a>
