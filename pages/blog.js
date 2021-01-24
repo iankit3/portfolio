@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Page, { Wrapper } from "../Components/Page";
-import PostList from "../Components/Postlist";
-import matter from 'gray-matter'
+import PostList from "@components/PostList";
+import matter from "gray-matter";
 
 function BlogPage({ posts }) {
   return (
@@ -19,11 +19,10 @@ function BlogPage({ posts }) {
 export default BlogPage;
 
 export async function getStaticProps() {
-
   const posts = ((context) => {
     const keys = context.keys();
     const values = keys.map(context);
-    
+
     const data = keys.map((key, index) => {
       let slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
       const value = values[index];
@@ -40,7 +39,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: posts
+      posts: posts,
     },
   };
 }
